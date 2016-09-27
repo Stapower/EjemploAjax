@@ -63,9 +63,9 @@ function MostrarSinParametros()
 
 	},function()
 	{
-
+		setTimeout(function() {}, 4);
 	});
-
+setTimeout(function() {}, 4);
 }
 
 function Mostrar(queMostrar)
@@ -88,6 +88,9 @@ function Mostrar(queMostrar)
 		//alert("siempre "+retorno.statusText);
 
 	});
+
+
+
 }
 
 function MostarLogin()
@@ -98,6 +101,8 @@ function MostarLogin()
 		type:"post",
 		data:{queHacer:"MostarLogin"}
 	});
+
+
 	funcionAjax.done(function(retorno){
 		$("#principal").html(retorno);
 		$("#informe").html("Correcto Form login!!!");	
